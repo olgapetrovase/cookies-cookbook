@@ -1,0 +1,14 @@
+C:\Projects\Udemy\C#_ultimate_course\CookiesCookbook\CookiesCookbook\CookiesCookbook\bin\Debug\net8.0\CookiesCookbook.exe
+C:\Projects\Udemy\C#_ultimate_course\CookiesCookbook\CookiesCookbook\CookiesCookbook\bin\Debug\net8.0\CookiesCookbook.deps.json
+C:\Projects\Udemy\C#_ultimate_course\CookiesCookbook\CookiesCookbook\CookiesCookbook\bin\Debug\net8.0\CookiesCookbook.runtimeconfig.json
+C:\Projects\Udemy\C#_ultimate_course\CookiesCookbook\CookiesCookbook\CookiesCookbook\bin\Debug\net8.0\CookiesCookbook.dll
+C:\Projects\Udemy\C#_ultimate_course\CookiesCookbook\CookiesCookbook\CookiesCookbook\bin\Debug\net8.0\CookiesCookbook.pdb
+C:\Projects\Udemy\C#_ultimate_course\CookiesCookbook\CookiesCookbook\CookiesCookbook\obj\Debug\net8.0\CookiesCookbook.GeneratedMSBuildEditorConfig.editorconfig
+C:\Projects\Udemy\C#_ultimate_course\CookiesCookbook\CookiesCookbook\CookiesCookbook\obj\Debug\net8.0\CookiesCookbook.AssemblyInfoInputs.cache
+C:\Projects\Udemy\C#_ultimate_course\CookiesCookbook\CookiesCookbook\CookiesCookbook\obj\Debug\net8.0\CookiesCookbook.AssemblyInfo.cs
+C:\Projects\Udemy\C#_ultimate_course\CookiesCookbook\CookiesCookbook\CookiesCookbook\obj\Debug\net8.0\CookiesCookbook.csproj.CoreCompileInputs.cache
+C:\Projects\Udemy\C#_ultimate_course\CookiesCookbook\CookiesCookbook\CookiesCookbook\obj\Debug\net8.0\CookiesCookbook.dll
+C:\Projects\Udemy\C#_ultimate_course\CookiesCookbook\CookiesCookbook\CookiesCookbook\obj\Debug\net8.0\refint\CookiesCookbook.dll
+C:\Projects\Udemy\C#_ultimate_course\CookiesCookbook\CookiesCookbook\CookiesCookbook\obj\Debug\net8.0\CookiesCookbook.pdb
+C:\Projects\Udemy\C#_ultimate_course\CookiesCookbook\CookiesCookbook\CookiesCookbook\obj\Debug\net8.0\CookiesCookbook.genruntimeconfig.cache
+C:\Projects\Udemy\C#_ultimate_course\CookiesCookbook\CookiesCookbook\CookiesCookbook\obj\Debug\net8.0\ref\CookiesCookbook.dll
