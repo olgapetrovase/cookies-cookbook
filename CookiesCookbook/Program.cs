@@ -2,15 +2,42 @@
 using CookiesCookbook.Recipes.Ingredients;
 using System.Text.Json;
 
+const FileFormat Format = FileFormat.Json;
 
+IStringsRepository stringsRepository = Format == FileFormat.Json ?
+    new StringsJsonRepository() :
+    new StringsTextualRepository();
+
+const string FileName = "recipes";
+
+FileMetadata fileMetadata = new(FileName, FileFormat.Json);
 
 var ingredientsRegister = new IngredientsRegister();
 var cookieRecipesApp = new CookieRecipesApp(
-    new RecipesRepository(new StringsJsonRepository(),
-                            ingredientsRegister),
+    new RecipesRepository(stringsRepository, ingredientsRegister),
     new RecipesConsoleUserInteraction(ingredientsRegister));
 
-cookieRecipesApp.Run("recipe.json");
+cookieRecipesApp.Run(fileMetadata.ToPath());
+
+public class FileMetadata
+{
+    public string Name { get; set; }
+    public FileFormat Format { get; set; }
+
+    public FileMetadata(string name, FileFormat format)
+    {
+        Name = name;
+        Format = format;
+    }
+
+    public string ToPath() => $"{Name}.{Format.AsFileExtension()}";
+}
+
+public static class FileFormatExtensions
+{
+    public static string AsFileExtension(this FileFormat fileFormat) =>
+        fileFormat == FileFormat.Json ? "json" : "txt";
+}
 
 public enum FileFormat
 {
