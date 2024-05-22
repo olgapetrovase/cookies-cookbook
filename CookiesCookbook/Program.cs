@@ -3,7 +3,7 @@ using CookiesCookbook.Recipes.Ingredients;
 
 var cookieRecipesApp = new CookieRecipesApp(
     new RecipesRepository(),
-    new RecipesConsoleUserInteraction());
+    new RecipesConsoleUserInteraction(new IngredientsRegister()));
 
 cookieRecipesApp.Run("recipe.txt");
 
@@ -56,6 +56,12 @@ public interface IRecipesUserInteraction
 }
 public class RecipesConsoleUserInteraction : IRecipesUserInteraction
 {
+    private readonly IngredientsRegister _ingredientsRegister;
+
+    public RecipesConsoleUserInteraction(IngredientsRegister ingredientsRegister)
+    {
+        _ingredientsRegister = ingredientsRegister;
+    }
     public void Exit()
     {
         Console.WriteLine("Press any key to close.");
@@ -84,12 +90,32 @@ public class RecipesConsoleUserInteraction : IRecipesUserInteraction
     {
         Console.WriteLine("Create a new cokkie recipe! " +
             "Available ingredients are:");
+
+        foreach (var ingredient in _ingredientsRegister.All)
+        {
+            Console.WriteLine(ingredient);
+        }
     }
 
     public void ShowMessage(string message)
     {
         Console.WriteLine(message);
     }
+}
+
+public class IngredientsRegister
+{
+    public IEnumerable<Ingredient> All { get; } = new List<Ingredient>
+    {
+        new WheatFlour(),
+        new CoconutFlour(),
+        new Butter(),
+        new Chocolate(),
+        new Sugar(),
+        new Cardamom(),
+        new Cinnamon(),
+        new CocoaPowder()
+    };
 }
 
 public interface IRecipesRepository
